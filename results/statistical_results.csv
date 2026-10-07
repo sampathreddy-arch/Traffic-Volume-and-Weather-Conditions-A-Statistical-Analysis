@@ -1,0 +1,6 @@
+Hypothesis,Test,p_value,Effect_size,Significant
+H1,Mann-Whitney U (unadj) + OLS (adj),0.0052728805131429975,-0.011973325148476599,True
+H2,Kruskal-Wallis + Dunn-Holm,0.01100850386360521,0.00020061231748620106,True
+H3,OLS Interaction Term,0.9959600626144353,-0.2651952157374353,False
+H4,Polynomial OLS (quadratic term F-test),7.524611302684448e-05,-0.17866184509641436,True
+H5,Nested Model ΔR² + F-test,0.0,0.0008929712999837802,True

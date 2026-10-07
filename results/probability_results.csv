@@ -1,0 +1,95 @@
+category,metric,value
+Basic,P(Rain),0.05061137954836801
+Basic,P(Snow),0.0007642244354600138
+Basic,P(High Traffic),0.25022187161029485
+Basic,P(Peak),0.2064392071787792
+Basic,P(Holiday),0.0013065772606251848
+Basic,P(Dry),0.9486490484173159
+Basic,P(Rain OR Snow),0.05135095158268416
+Basic,P(Rain AND Snow),2.4652401143871413e-05
+Conditional,Condition,"0           Rain
+1        No Rain
+2           Snow
+3        No Snow
+4      Peak Hour
+5       Off-Peak
+6        Holiday
+7    Non-Holiday
+Name: Condition, dtype: str"
+Conditional,n(Condition),"0     2053
+1    38511
+2       31
+3    40533
+4     8374
+5    32190
+6       53
+7    40511
+Name: n(Condition), dtype: int64"
+Conditional,n(High ∩ Cond),"0      552
+1     9598
+2        6
+3    10144
+4     5245
+5     4905
+6        0
+7    10150
+Name: n(High ∩ Cond), dtype: int64"
+Conditional,P(Condition),"0    0.0506
+1    0.9494
+2    0.0008
+3    0.9992
+4    0.2064
+5    0.7936
+6    0.0013
+7    0.9987
+Name: P(Condition), dtype: float64"
+Conditional,P(High Traffic | Condition),"0    0.2689
+1    0.2492
+2    0.1935
+3    0.2503
+4    0.6263
+5    0.1524
+6    0.0000
+7    0.2505
+Name: P(High Traffic | Condition), dtype: float64"
+By Weather,Weather Type,"0          Clouds
+7            Haze
+3         Drizzle
+2            Rain
+5             Fog
+4            Mist
+1           Clear
+6    Thunderstorm
+8            Snow
+Name: Weather Type, dtype: str"
+By Weather,n,"0    15120
+7      830
+3      685
+2     4366
+5      312
+4     3230
+1    13359
+6      485
+8     2162
+Name: n, dtype: int64"
+By Weather,n(High Traffic),"0    4338
+7     226
+3     181
+2    1118
+5      78
+4     782
+1    2934
+6      95
+8     398
+Name: n(High Traffic), dtype: int64"
+By Weather,P(High | Weather),"0    0.2869
+7    0.2723
+3    0.2642
+2    0.2561
+5    0.2500
+4    0.2421
+1    0.2196
+6    0.1959
+8    0.1841
+Name: P(High | Weather), dtype: float64"
+Poisson,Dispersion Index,1196.8076388476163
